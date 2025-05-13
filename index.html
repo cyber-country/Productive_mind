@@ -27,7 +27,22 @@
     </section>
 
     <section id="timer">
-      <!-- Timer section will load here -->
+      <!-- Enhanced Timer Section -->
+      <div class="timer-container">
+  <svg class="progress-ring" width="150" height="150">
+    <circle
+      class="progress-ring__circle"
+      stroke="limegreen"
+      stroke-width="10"
+      fill="transparent"
+      r="65"
+      cx="75"
+      cy="75"
+    />
+  </svg>
+  <div class="time-display" id="timer-display">25:00</div>
+</div>
+
     </section>
 
     <section id="habit-tracker">
@@ -48,7 +63,7 @@
   <!-- Add type="module" to load JS files as modules -->
   <script type="module" src="script.js"></script>
 
-  <!-- Include other JS files as modules, if needed -->
+  <!-- Include other JS files as modules -->
   <script type="module" src="components/bookmarks.js"></script>
   <script type="module" src="components/timer.js"></script>
   <script type="module" src="components/habitTracker.js"></script>
