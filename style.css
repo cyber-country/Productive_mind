@@ -590,3 +590,61 @@ button:disabled {
   color: #aaa;
   cursor: not-allowed;
 }
+.timer-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(0deg);
+  transform-origin: 50% 50%;
+}
+
+.time-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.timer-controls {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.timer-controls input,
+.timer-controls button {
+  margin: 0.3rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+}
+.progress-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  transform: rotate(-90deg);
+}
+
+.progress-ring__circle {
+  fill: transparent;
+  stroke: limegreen;
+  stroke-width: 10;
+  stroke-linecap: round;
+  r: 65;
+  cx: 75;
+  cy: 75;
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(0deg);
+  transform-origin: 50% 50%;
+}
